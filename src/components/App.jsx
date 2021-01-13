@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 function App() {
   return(
-    <div className="content-container">
+    <div className="dashboard-container">
       <Nav />
     </div>
   );

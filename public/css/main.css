@@ -1,9 +1,12 @@
-body {
+html, body {
   background-color: #bbbfca;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
-.content-container {
+.dashboard-container {
   background-color: #e8e8e8;
   border-radius: 25px;
   padding: 5rem;
+  margin: 2rem;
 }
