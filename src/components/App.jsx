@@ -1,8 +1,11 @@
 import React from "react";
+import Nav from "./Nav";
 
 function App() {
   return(
-    <h1>Hello, world!</h1>
+    <div className="content-container">
+      <Nav />
+    </div>
   );
 }
 
