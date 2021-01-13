@@ -5,14 +5,14 @@ import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 import { faChartArea } from '@fortawesome/free-solid-svg-icons';
 
-function Nav() {
+function Nav(props) {
   return(
     <div className="nav">
       <nav>
-        <a href="./"><FontAwesomeIcon icon={faHome}/> Home</a>
-        <a href="./"><FontAwesomeIcon icon={faBook}/> Statistics</a>
-        <a href="./"><FontAwesomeIcon icon={faNewspaper}/> Reports</a>
-        <a href="./"><FontAwesomeIcon icon={faChartArea}/> Charts</a>
+        <a href="./" onClick={(e) => {e.preventDefault(); props.handleNavClick("Home")}}><FontAwesomeIcon icon={faHome}/> Home</a>
+        <a href="./" onClick={(e) => {e.preventDefault(); props.handleNavClick("Stats")}}><FontAwesomeIcon icon={faBook}/> Statistics</a>
+        <a href="./" onClick={(e) => {e.preventDefault(); props.handleNavClick("Reports")}}><FontAwesomeIcon icon={faNewspaper}/> Reports</a>
+        <a href="./" onClick={(e) => {e.preventDefault(); props.handleNavClick("Charts")}}><FontAwesomeIcon icon={faChartArea}/> Charts</a>
       </nav>
     </div>
   );
