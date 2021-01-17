@@ -19,6 +19,7 @@ function App() {
           <Nav handleNavClick={handleNavClick}/>
         </div>
         <div className="content-container">
+          <h1>{page}</h1>
           <Home />
         </div>
       </div>
@@ -30,6 +31,7 @@ function App() {
           <Nav handleNavClick={handleNavClick}/>
         </div>
         <div className="content-container">
+          <h1>{page}</h1>
           <Stats />
         </div>
       </div>
@@ -41,6 +43,7 @@ function App() {
           <Nav handleNavClick={handleNavClick}/>
         </div>
         <div className="content-container">
+          <h1>{page}</h1>
           <Reports />
         </div>
       </div>
@@ -52,6 +55,7 @@ function App() {
           <Nav handleNavClick={handleNavClick}/>
         </div>
         <div className="content-container">
+          <h1>{page}</h1>
           <Charts />
         </div>
       </div>
@@ -63,6 +67,7 @@ function App() {
           <Nav handleNavClick={handleNavClick}/>
         </div>
         <div className="content-container">
+          <h1>Home</h1>
           <Home />
         </div>
       </div>
