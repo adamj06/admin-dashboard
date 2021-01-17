@@ -2,6 +2,10 @@ import React from "react";
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import sales from "./data/sales";
 
+const formatXAxis = (tickItem) => {
+  return tickItem.toLocaleDateString();
+}
+
 function Charts() {
   return(
     <div className="chart-container">
@@ -11,7 +15,7 @@ function Charts() {
         <LineChart width={600} height={300} data={sales}>
           <Line type="monotone" dataKey="amount" stroke="#8884d8" />
           <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="date" tickFormatter={formatXAxis}/>
           <YAxis />
           <Tooltip />
         </LineChart>
